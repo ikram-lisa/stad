@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "vite": "^4.4.9"
+  },
+  "name": "stads",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "sass": "^1.67.0"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "vite --open --host",
+    "build": "vite build",
+    "preview": "vite preview --open --host",
+    "deploy": "surge ./dist stads_ikram.surge.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
