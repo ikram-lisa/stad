@@ -9,10 +9,10 @@ async function main() {
     .map((stadInfo) => {
       const statsHtml = stadInfo.stats
         .map(
-          (state) => `
-          <li>${
-            state.maand.charAt(0).toUpperCase() + state.maand.slice(1) || "N/A"
-          } - ${state.zon || "N/A"}</li>
+          ({ maand, zon }) => `
+          <li>${maand.charAt(0).toUpperCase() + maand.slice(1) || "N/A"} - ${
+            zon || "N/A"
+          }</li>
     `
         )
         .join("");
